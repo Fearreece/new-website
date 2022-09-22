@@ -49,8 +49,8 @@ pipeline{
             steps{
                 echo 'Your image is building'
                 sh '''
-                    docker build -t express:latest .
-                    docker run --name express -d -p 3000:3000 express:latest
+                    sudo docker build -t express:latest .
+                    sudo docker run --name express -d -p 3000:3000 express:latest
                 '''
                 
             }
