@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    stage{
+    stages{
         stage("Login stage"){
             steps{
                 echo 'Logging into EC2 instance'
